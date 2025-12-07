@@ -179,7 +179,7 @@ display: flex;
       }
 
       .ai {
-        width: 100%;
+        width: 70%;
         flex-shrink: 0;
         margin-left: 20px;
        
@@ -789,8 +789,7 @@ Core™ Ultra processors (Series 2).</p> </div>
 
         <div>
           <img
-            src="https://cdn-dynmedia-1.microsoft.c
-om/is/image/microsoftcorp/Card-Horizontal-AI-Project-Sparrow?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=85"
+            src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Card-Horizontal-AI-Project-Sparrow?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=85"
             alt="">
         </div>
       </div>
@@ -812,15 +811,46 @@ om/is/image/microsoftcorp/Card-Horizontal-AI-Project-Sparrow?resMode=sharp2&op_u
   rev.reveal('.right',{
   origin:'right',
      });
+rev.reveal('.Hero .text-info', {
+    origin: 'left',
+    distance: '60px',
+    duration: 700,
+    delay: 200
+  });
 
-  rev.reveal('.Hero',{
-  
-    origin:'top',
-     });
-       rev.reveal('.Question',{
-  
-    origin:'bottom',
-     });
+  // Hero image
+  rev.reveal('.Hero .Img', {
+    origin: 'right',
+    distance: '60px',
+    duration: 700,
+    delay: 300
+  });
+
+  /* ================= QUESTION SECTION ================= */
+
+  // Question heading
+  rev.reveal('.Question h1', {
+    origin: 'top',
+    distance: '40px',
+    duration: 600
+  });
+
+  // Input box
+  rev.reveal('.Question .ask', {
+    origin: 'bottom',
+    distance: '40px',
+    duration: 600,
+    delay: 150
+  });
+
+  // Buttons (staggered)
+  rev.reveal('.Question .Buttons button', {
+    origin: 'bottom',
+    distance: '30px',
+    duration: 500,
+    interval: 150
+  });
+
     rev.reveal('.Taskk .Boy', {
   origin: 'bottom',
   distance: '40px',
